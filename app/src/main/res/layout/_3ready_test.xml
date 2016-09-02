@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dB"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp"
+        android:shadowColor="#4C4C4C"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text=" 120dB"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="220dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#DB0000"
+        android:id="@+id/db120"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 전투기의 이착륙 소음"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="230dp"
+        android:id="@+id/db1200"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text=" 110dB"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="270dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF0000"
+        android:id="@+id/db110"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 자동차 경적 소음"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="280dp"
+        android:id="@+id/db1100"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text=" 100dB"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="320dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF3636"
+        android:id="@+id/db100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 열차 통과시 철도변 소음"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="330dp"
+        android:id="@+id/db1000"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  90dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="370dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF4848"
+        android:id="@+id/db90"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 소음이 심한 공장 안"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="380dp"
+        android:id="@+id/db900"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  80dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="420dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF5A5A"
+        android:id="@+id/db80"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 지하철 소음"
+       android:layout_marginLeft="400dp"
+        android:layout_marginTop="430dp"
+        android:id="@+id/db800"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  70dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="470dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF6C6C"
+        android:id="@+id/db70"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 시끄러운 사무실,전화벨"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="480dp"
+        android:id="@+id/db700"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  60dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="520dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF7E7E"
+        android:id="@+id/db60"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" '대화 소리'"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="530dp"
+        android:id="@+id/db600"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  50dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="570dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FF9090"
+        android:id="@+id/db50"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 조용한 사무실"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="580dp"
+        android:id="@+id/db500"/>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  40dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="620dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FFA2A2"
+        android:id="@+id/db40"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 조용한 주택가,도서관"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="630dp"
+        android:id="@+id/db400"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  30dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="670dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FFB4B4"
+        android:id="@+id/db30"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 속삭이는 소리,심야의 교외"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="680dp"
+        android:id="@+id/db300"/>
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:textSize="45dp"
+        android:textColor="#FFFFFF"
+        android:text="  20dB "
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="720dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:background="#FFC6C6"
+        android:id="@+id/db20"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text=" 나뭇잎 스치는 소리"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="730dp"
+        android:id="@+id/db200" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:text="테스트에 적합한 환경은 20dB이하 입니다"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="850dp"
+        android:shadowColor="#42413A"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:text="데시벨을 확인했다면 '확인'를 눌러주세요"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="930dp"
+        android:shadowColor="#42413A"
+        android:shadowRadius="1.0"
+        android:shadowDx="2"
+        android:shadowDy="2"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1060dp"
+        android:layout_marginLeft="360dp"
+        android:text="확인"
+        android:textSize="25dp"
+        android:textColor="#F0D630"
+        android:id="@+id/surroundcheck"
+        android:onClick="onClick"
+        android:background="@drawable/surroundcheck_click"/>
+</FrameLayout>
