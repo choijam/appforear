@@ -8,13 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.media.AudioManager;
 import android.widget.TextView;
 
 
 public class _4simpletest extends Activity{
     double  data2;
-
+    Button left20_1000;
+    Button left40_1000;
+    Button left60_1000;
+    Button left80_1000;
     MediaPlayer secondSound_1, secondSound_2, secondSound_3, secondSound_4;
 
     MediaPlayer secondSound2_1, secondSound2_2, secondSound2_3, secondSound2_4;
@@ -33,16 +35,10 @@ public class _4simpletest extends Activity{
         secondSound2_3 = MediaPlayer.create(this, R.raw.thousand__sixty);
         secondSound2_4 = MediaPlayer.create(this, R.raw.thousand__eighty);
 
-        AudioManager mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
-        int volume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC); //현재볼륨정보
-        if (volume != 11) {
-            mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 11, AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);
-        }
-
-        Button left20_1000 = (Button) findViewById(R.id.db20_1000);
-        Button left40_1000 = (Button) findViewById(R.id.db40_1000);
-        Button left60_1000 = (Button) findViewById(R.id.db60_1000);
-        Button left80_1000 = (Button) findViewById(R.id.db80_1000);
+        left20_1000 = (Button) findViewById(R.id.db20_1000);
+        left40_1000 = (Button) findViewById(R.id.db40_1000);
+        left60_1000 = (Button) findViewById(R.id.db60_1000);
+        left80_1000 = (Button) findViewById(R.id.db80_1000);
 
         mTypeface = Typeface.createFromAsset(getAssets(), "210.ttf");
         ViewGroup root = (ViewGroup) findViewById(android.R.id.content);
@@ -56,11 +52,20 @@ public class _4simpletest extends Activity{
         switch (v.getId()) {
             case R.id.db20_1000:
                 secondSound_1.start();
+                left20_1000.setEnabled(false);
+                left40_1000.setVisibility(View.GONE);
+                left60_1000.setVisibility(View.GONE);
+                left80_1000.setVisibility(View.GONE);
+
                 ImageButton button = (ImageButton) findViewById(R.id.lefthear);
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         secondSound_1.stop();
+                        left20_1000.setEnabled(true);
+                        left40_1000.setVisibility(View.VISIBLE);
+                        left60_1000.setVisibility(View.VISIBLE);
+                        left80_1000.setVisibility(View.VISIBLE);
                         data2 = 20;   //////////////데이터저장=주파수1000 데시벨20
                     }
                 });
@@ -68,6 +73,8 @@ public class _4simpletest extends Activity{
                 break;
         }
     }
+
+
     void setGlobalFont(ViewGroup root) {
         for (int i = 0; i < root.getChildCount(); i++) {
             View child = root.getChildAt(i);
